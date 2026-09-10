@@ -1,20 +1,11 @@
-courses = ["Python", "Java", "Web Development"]
+username = "student"
+password = "1234"
 
-name = input("Enter your name: ")
+u = input("Username: ")
+p = input("Password: ")
 
-for i, course in enumerate(courses, 1):
-    print(i, course)
-
-choice = int(input("Choose a course: "))
-course = courses[choice - 1]
-
-progress = int(input("Enter progress (%): "))
-
-print("\nStudent:", name)
-print("Course:", course)
-print("Progress:", progress, "%")
-
-if progress == 100:
-    print("Course Completed!")
+if u == username and p == password:
+    print("Login successful!")
+    print("Welcome to LMS")
 else:
-    print("Course In Progress")
+    print("Invalid login")
